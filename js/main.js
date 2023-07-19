@@ -3,6 +3,15 @@
  	easing: 'slide'
  });
 
+const getDateDiff = (d1, d2) => {
+	const date1 = new Date(d1);
+	const date2 = new Date(d2);
+	
+	const diffDate = date1.getTime() - date2.getTime();
+	
+	return Math.abs(diffDate / (1000 * 60 * 60 * 24)); // 밀리세컨 * 초 * 분 * 시 = 일
+}
+
 (function($) {
 
 	"use strict";
@@ -344,6 +353,17 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
+
+  var today = new Date();
+
+	var year = today.getFullYear();
+	var month = ('0' + (today.getMonth() + 1)).slice(-2);
+	var day = ('0' + today.getDate()).slice(-2);
+
+	var dateString = year + '-' + month  + '-' + day;
+
+  getDateDiff("2017-12-01", dateString);
+
 };
 
 
