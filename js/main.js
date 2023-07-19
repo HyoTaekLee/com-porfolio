@@ -363,9 +363,10 @@ window.onload = function() {
 	var dateString = year + '-' + month  + '-' + day;
 
   var wordDate = getDateDiff("2017-12-01", dateString);
-
+  console.log("wordDate",wordDate);
   $('#wordDate').val(wordDate);
-
+  $('#wordDate').text(wordDate);
+  
 };
 
 
