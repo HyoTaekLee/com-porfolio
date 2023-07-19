@@ -286,7 +286,7 @@ const getDateDiff = (d1, d2) => {
 
 			$('html,body').animate({
 				scrollTop: $('.goto-here').offset().top
-			}, 500, 'easeInOutExpo');
+			}, 100, 'easeInOutExpo');
 			
 			return false;
 		});
