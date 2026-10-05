@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
 	<title>풀스택 개발자 이효택</title>
@@ -29,7 +29,7 @@
 
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="#"><span>Lee</span>HyoTaek</a>
+			<a class="navbar-brand" href="#home-section"><span>Lee</span>HyoTaek</a>
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="oi oi-menu"></span> Menu
@@ -39,16 +39,17 @@
 				<ul class="navbar-nav nav ml-auto">
 					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-					<li class="nav-item"><a href="#education-section" class="nav-link"><span>Education</span></a></li>
-					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#page-1" class="nav-link"><span>Education</span></a></li>
+					<li class="nav-item"><a href="#page-2" class="nav-link"><span>Experience</span></a></li>
+					<li class="nav-item"><a href="#page-3" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#page-4" class="nav-link"><span>Projects</span></a></li>
 					<li class="nav-item"><a href="#side-projects-section" class="nav-link"><span>Side Projects</span></a></li>
-					<!-- <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li> -->
 					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<section class="hero-wrap js-fullheight">
+	<section class="hero-wrap js-fullheight" id="home-section">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
@@ -62,7 +63,6 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		</div>
 		<div class="mouse">
 			<a href="#" class="mouse-icon">
@@ -78,7 +78,7 @@
 					<div class="img-about img d-flex align-items-stretch">
 						<div class="overlay"></div>
 						<div class="img d-flex align-self-stretch align-items-center"
-							style="background-image:url(images/me.jpg);">
+							style="background-image:url(images/web.jpg);">
 						</div>
 					</div>
 				</div>
@@ -87,25 +87,22 @@
 						<div class="col-md-12 heading-section ftco-animate">
 							<h1 class="big">About</h1>
 							<h2 class="mb-4">About Me</h2>
-							<p>노트북만 있다면, 언제 어디서나 즐겁게 일하는 6년차 개발자 입니다. </p>
+							<p>노트북만 있다면, 언제 어디서나 즐겁게 일하는 <span class="career-year"></span> 개발자 입니다. </p>
 							<ul class="about-info mt-4 px-md-0 px-2">
 								<li class="d-flex"><span>Name:</span> <span>이효택</span></li>
 								<li class="d-flex"><span>Address:</span> <span>성남시 중원구 금광동</span></li>
-								<li class="d-flex"><span>Email:</span> <span>ktn613@naver.com</span></li>
-								<li class="d-flex"><span>Phone: </span> <span>010-4440-8203</span></li>
+								<li class="d-flex"><span>Email:</span> <span><a href="mailto:ktn613@naver.com">ktn613@naver.com</a></span></li>
+								<li class="d-flex"><span>Phone: </span> <span><a href="tel:010-4440-8203">010-4440-8203</a></span></li>
 							</ul>
 						</div>
 					</div>
 					<div class="counter-wrap ftco-animate d-flex mt-md-3">
 						<div class="text">
 							<p class="mb-4">
-								<span class="number" data-number="8">0</span>
+								<span class="number" data-number="10">0</span>
 								<span>Project complete</span>
 							</p>
-							<!-- <p><a target="_blank"
-									href="https://drive.google.com/file/d/1uJg0Yun35HWc4YsEKfEX5L6Uyik5MPl_/view?usp=sharing"
-									class="btn btn-primary py-3 px-3">이력서 다운받기</a></p> -->
-							<p><a target="_blank" href="" class="btn btn-primary py-3 px-3">이력서 다운받기</a></p>
+							<p><a target="_blank" href="https://drive.google.com/file/d/1uJg0Yun35HWc4YsEKfEX5L6Uyik5MPl_/view?usp=sharing" class="btn btn-primary py-3 px-3">이력서 다운받기</a></p>
 						</div>
 					</div>
 				</div>
@@ -120,14 +117,14 @@
 					<div class="block-18 shadow">
 						<div class="text">
 							<strong id="wordDate" class="number"></strong>
-							<span>코딩한 일수</span>
+							<span>코딩한 일수 (Days)</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="8"></strong>
+							<strong class="number" data-number="10">10</strong>
 							<span>Complete Projects</span>
 						</div>
 					</div>
@@ -135,16 +132,16 @@
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="100">3330</strong>
-							<span>Happy Customers</span>
+							<strong id="careerYearCounter" class="number"></strong>
+							<span>개발 연차 (Years)</span>
 						</div>
 					</div>
 				</div>
 				<div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
 					<div class="block-18 shadow">
 						<div class="text">
-							<strong class="number" data-number="50">4440</strong>
-							<span>Cups of coffee</span>
+							<strong class="number" data-number="100">100</strong>
+							<span>Service Stability (%)</span>
 						</div>
 					</div>
 				</div>
@@ -174,11 +171,10 @@
 								<span class="flaticon-ideas"></span>
 							</div>
 							<div class="text pl-3">
-								<span class="date">2010-2016</span>
+								<span class="date">2010 - 2016</span>
 								<h2>정보통신공학 전공</h2>
 								<span class="position">동의대학교</span>
-								<!-- <p>전산 동아리 활동과 기숙사 생활을 통해, 함께 일하는 밥을 배웠습니다. Computer Science 기초 지식을 4년간 탄탄히 쌓아 빠르고 올바른
-									방향으로 성장할 수 있는 개발자가 되었습니다. </p> -->
+								<p>Computer Science 기초 지식을 4년간 탄탄히 쌓아 빠르고 올바른 방향으로 성장할 수 있는 개발자가 되었습니다.</p>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -186,38 +182,12 @@
 								<span class="flaticon-ideas"></span>
 							</div>
 							<div class="text pl-3">
-								<span class="date">2017-2017</span>
-								<h2>쌍용 학원</h2>
-								<span class="position">과정</span>
-								<p>기초과정~~~,,,~~~</p>
+								<span class="date">2017</span>
+								<h2>쌍용교육센터</h2>
+								<span class="position">Java 기반 풀스택 개발자 과정</span>
+								<p>Java, Spring, 데이터베이스 및 웹 표준 기술 등 개발 실무 역량과 협업 프로젝트를 수료하였습니다.</p>
 							</div>
 						</div>
-						<!-- <div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2017-2017</span>
-								<h2>Computer Processing Systems/Computer Software</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-									into your mouth.</p>
-							</div>
-						</div> -->
-						<!-- <div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Diploma in Computer</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences fly
-									into your mouth.</p>
-							</div>
-						</div> -->
 					</div>
 
 					<div id="page-2" class="page two">
@@ -227,35 +197,14 @@
 								<span class="flaticon-ideas"></span>
 							</div>
 							<div class="text pl-3">
-								<div> <b class="text-dark">회사명 : </b> <span class="date">아이비컴텍</span> </div>
-								<div> <b class="text-dark">기간 : </b> <span class="date">2017.12 ~ (재직중)</span> </div>
-								<div> <b class="text-dark">근무 부서(직위) : </b> <span class="date">SI 개발(대리)</span> </div>
-								<div> <b class="text-dark">담당 업무 : </b> <span class="date">Full Stack Developer</span> </div>
-								<!-- <p>동남아 스파 예약 서비스 Web 개발, 온라인 요가 수업 예약/결제 서비스 개발<br /></p>
-								<b class="text-primary">기술 스택</b>
-								<p>ReactJS, Next.js,Typescript, Styled-components, AWS S3 static hosting</p>
-								<b class="text-primary">주요 업무 </b> </div>
-								<div>
-									<div> - React + typescript 기반 웹 서비스 개발/운영</div>
-									<div> - 디자인 시스템 도입을 위한 UI 컴포넌트 관리용 storybook 도입</div>
-									<div> - SEO를 위한 Next.js 도입</div>
-									<div> - Serverless 환경을 위한 s3 기반의 static hosting 구축</div>
-								</div> -->
-							</div>
-
-						</div>
-						<!-- <div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Web Designer</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
+								<div> <b class="text-dark">회사명 : </b> <span class="date font-weight-bold">나온소프트</span> </div>
+								<div> <b class="text-dark">기간 : </b> <span class="date">2024.10 ~ 재직중 (<span class="naon-period"></span>)</span> </div>
+								<div> <b class="text-dark">근무 부서(직위) : </b> <span class="date">운영본부 (과장 / 팀원)</span> </div>
+								<div> <b class="text-dark">주요 직무 : </b> <span class="date">웹개발자</span> </div>
+								<div class="mt-2">
+									<b class="text-dark">담당 업무 : </b>
+									<span class="text-secondary">엔터프라이즈 그룹웨어 솔루션 코어 기능 개발, 고객사 커스터마이징 및 대규모 운영 안정성 확보</span>
+								</div>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -263,38 +212,57 @@
 								<span class="flaticon-ideas"></span>
 							</div>
 							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Web Marketing</h2>
-								<span class="position">Cambridge University</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
+								<div> <b class="text-dark">회사명 : </b> <span class="date font-weight-bold">아이비컴텍</span> </div>
+								<div> <b class="text-dark">기간 : </b> <span class="date">2017.12 ~ 2024.09 (6년 10개월)</span> </div>
+								<div> <b class="text-dark">근무 부서(직위) : </b> <span class="date">개발 (과장 / 팀원)</span> </div>
+								<div> <b class="text-dark">주요 직무 : </b> <span class="date">웹개발자</span> </div>
+								<div class="mt-2">
+									<b class="text-dark">담당 업무 : </b>
+									<span class="text-secondary">SI 회사로 UI 개발 Front-End, Back-End를 주 업무로 진행했습니다.</span>
+								</div>
 							</div>
 						</div>
-						<div class="resume-wrap d-flex ftco-animate">
-							<div class="icon d-flex align-items-center justify-content-center">
-								<span class="flaticon-ideas"></span>
-							</div>
-							<div class="text pl-3">
-								<span class="date">2014-2015</span>
-								<h2>Art &amp; Creative Director</h2>
-								<span class="position">Side Tech</span>
-								<p>A small river named Duden flows by their place and supplies it with the necessary
-									regelialia. It is a paradisematic country, in which roasted parts of sentences
-									fly
-									into your mouth.</p>
-							</div>
-						</div> -->
 					</div>
 					<div id="page-3" class="page three">
 						<h2 class="heading">Skills</h2>
-						<div class="row progress-circle mb-5">
+						<div class="row progress-circle mb-4">
 							<div class="col-lg-4 mb-4">
 								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">jQuery</h2>
+									<h2 class="h5 font-weight-bold text-center mb-4">JAVA / Spring</h2>
+									<div class="progress mx-auto" data-value='85'>
+										<span class="progress-left">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<span class="progress-right">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
+										</div>
+									</div>
+								</div>
+							</div>
 
-									<!-- Progress bar 1 -->
+							<div class="col-lg-4 mb-4">
+								<div class="bg-white rounded-lg shadow p-4">
+									<h2 class="h5 font-weight-bold text-center mb-4">JavaScript</h2>
+									<div class="progress mx-auto" data-value='85'>
+										<span class="progress-left">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<span class="progress-right">
+											<span class="progress-bar border-primary"></span>
+										</span>
+										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+											<div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 mb-4">
+								<div class="bg-white rounded-lg shadow p-4">
+									<h2 class="h5 font-weight-bold text-center mb-4">jQuery / UI</h2>
 									<div class="progress mx-auto" data-value='90'>
 										<span class="progress-left">
 											<span class="progress-bar border-primary"></span>
@@ -302,165 +270,35 @@
 										<span class="progress-right">
 											<span class="progress-bar border-primary"></span>
 										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+										<div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
 											<div class="h2 font-weight-bold">90<sup class="small">%</sup></div>
 										</div>
 									</div>
-									<!-- END -->
-
-									<!-- Demo info -->
-									<!-- <div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div> -->
-									<!-- END -->
-								</div>
-							</div>
-
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">JAVA</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='80'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">80<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<!-- Demo info -->
-									<!-- <div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div> -->
-									<!-- END -->
-								</div>
-							</div>
-
-							<div class="col-lg-4 mb-4">
-								<div class="bg-white rounded-lg shadow p-4">
-									<h2 class="h5 font-weight-bold text-center mb-4">javaScript</h2>
-
-									<!-- Progress bar 1 -->
-									<div class="progress mx-auto" data-value='90'>
-										<span class="progress-left">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<span class="progress-right">
-											<span class="progress-bar border-primary"></span>
-										</span>
-										<div
-											class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
-											<div class="h2 font-weight-bold">75<sup class="small">%</sup></div>
-										</div>
-									</div>
-									<!-- END -->
-
-									<!-- Demo info -->
-									<!-- <div class="row text-center mt-4">
-										<div class="col-6 border-right">
-											<div class="h4 font-weight-bold mb-0">28%</div><span
-												class="small text-gray">Last week</span>
-										</div>
-										<div class="col-6">
-											<div class="h4 font-weight-bold mb-0">60%</div><span
-												class="small text-gray">Last month</span>
-										</div>
-									</div> -->
-									<!-- END -->
 								</div>
 							</div>
 						</div>
-						<!-- <div class="row">
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>React</h3>
-									<div class="progress">
-										<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
+
+						<div class="row mb-5">
+							<div class="col-md-4 mb-3">
+								<div class="bg-white rounded shadow-sm p-4 h-100 border-top border-primary" style="border-top-width: 3px !important;">
+									<h5 class="text-primary font-weight-bold mb-3"><i class="flaticon-ideas mr-2"></i>Back-End</h5>
+									<p class="text-secondary mb-0">Java, Spring Boot, Spring Framework, MyBatis</p>
 								</div>
 							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>jQuery</h3>
-									<div class="progress">
-										<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
-											aria-valuemin="0" aria-valuemax="100" style="width:85%">
-											<span>85%</span>
-										</div>
-									</div>
+							<div class="col-md-4 mb-3">
+								<div class="bg-white rounded shadow-sm p-4 h-100 border-top border-primary" style="border-top-width: 3px !important;">
+									<h5 class="text-primary font-weight-bold mb-3"><i class="flaticon-flasks mr-2"></i>Front-End</h5>
+									<p class="text-secondary mb-0">JavaScript, jQuery, HTML5, CSS3, Bootstrap</p>
 								</div>
 							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>HTML5</h3>
-									<div class="progress">
-										<div class="progress-bar color-3" role="progressbar" aria-valuenow="95"
-											aria-valuemin="0" aria-valuemax="100" style="width:95%">
-											<span>95%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>CSS3</h3>
-									<div class="progress">
-										<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
-											aria-valuemin="0" aria-valuemax="100" style="width:90%">
-											<span>90%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>WordPress</h3>
-									<div class="progress">
-										<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
-											aria-valuemin="0" aria-valuemax="100" style="width:70%">
-											<span>70%</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="progress-wrap ftco-animate">
-									<h3>SEO</h3>
-									<div class="progress">
-										<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
-											aria-valuemin="0" aria-valuemax="100" style="width:80%">
-											<span>80%</span>
-										</div>
-									</div>
+							<div class="col-md-4 mb-3">
+								<div class="bg-white rounded shadow-sm p-4 h-100 border-top border-primary" style="border-top-width: 3px !important;">
+									<h5 class="text-primary font-weight-bold mb-3"><i class="flaticon-analysis mr-2"></i>DB &amp; DevOps</h5>
+									<p class="text-secondary mb-0">Oracle, MySQL, MariaDB, MSSQL, AWS S3/Athena, Git, SVN</p>
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div>
 					<div id="page-4" class="page four">
 						<h2 id="projects-section" class="heading">Projects</h2>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -468,22 +306,25 @@
 								<span class="flaticon-ideas"></span>
 							</div>
 							<div class="text pl-3">
-								<span class="date">2023.03 ~ 진행중</span>
+								<span class="date">2024.10 ~ 진행중</span>
+								<div class="d-flex">
+									<h2>엔터프라이즈 그룹웨어 솔루션 코어 개발 및 운영</h2>
+								</div>
+								<div> <b class="text-dark">개발 환경 : Java, Spring Boot, Spring, JavaScript, jQuery, MyBatis, Oracle, MySQL, Git </b> </div>
+								<div> <b class="text-dark">주요 업무 및 업무 성과 : 엔터프라이즈 그룹웨어 솔루션의 코어 기능 개발 및 고객사 커스터마이징을 수행하고 있으며, 대규모 운영 환경에서의 시스템 안정성 및 성능 최적화를 담당하고 있습니다. </b> </div>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2023.03 ~ 2024.09</span>
 								<div class="d-flex">
 									<h2>TANGO 클라우드 전환(2차)</h2>
-									<!-- <div>
-										&nbsp;
-										<a class="btn btn-outline-secondary" target="_blank" class="btn btn-outline-secondary" href="https://github.com/congchu/portfolio-template-2">Github</a>
-										&nbsp;
-										<a class="btn btn-outline-secondary" target="_blank" href="/images/project_1_screenshot.png">스크린샷</a>
-										&nbsp;
-										<a class="btn btn-outline-secondary" target="_blank" href="https://www.wellytravel.com/">Link</a>
-									</div> -->
 								</div>
-								<!-- <span class="position">SK Telecom</span> -->
-								<div> <b class="text-dark">개발 환경 : jQuery, javaScript, MyBatis, MySql, Oracle, argoCD, Git, Athena </b> </div>
-								<div> <b class="text-dark">주요 업무 및 업무 성과 : 현재 진행 중인 프로젝트로 개발 중인 것은 기존 Oracle로 조회하던 PI 이력 화면을 S3를 이용한 Athena 조회방식으로 바꾸고 해당 화면을 더욱 상세하면서 실무자들이 사용하기 편하게 이용하는 화면을 개발 중입니다. </b> </div>
-								<!-- <p> React </p> -->
+								<div> <b class="text-dark">개발 환경 : jQuery, JavaScript, MyBatis, MySQL, Oracle, ArgoCD, Git, AWS Athena </b> </div>
+								<div> <b class="text-dark">주요 업무 및 업무 성과 : 기존 Oracle로 조회하던 PI 이력 화면을 AWS S3를 이용한 Athena 조회 방식으로 전환하고, 실무자 사용 편의성을 고려한 상세 이력 조회 UI 및 백엔드 로직을 개발 완료하였습니다. </b> </div>
 							</div>
 						</div>
 						<div class="resume-wrap d-flex ftco-animate">
@@ -604,74 +445,27 @@
 	</section>
 
 
-	<section class="ftco-section ftco-project">
+	<section class="ftco-section ftco-project" id="side-projects-section">
 		<div class="container-fluid px-md-0">
 			<div class="row no-gutters justify-content-center pb-5">
 				<div class="col-md-12 heading-section text-center ftco-animate">
 					<h1 class="big big-2">Projects</h1>
-					<h2 id="side-projects-section" class="mb-4">Side Projects</h2>
+					<h2 class="mb-4">Side Projects</h2>
 					<p>꾸준히 사이드 프로젝트를 진행하며, 다양한 분야의 개발 환경을 경험해왔습니다.</p>
 				</div>
 			</div>
-			<div class="row no-gutters">
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/side-project-1.png);">
+			<div class="row no-gutters justify-content-center">
+				<div class="col-md-8 col-lg-6">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center rounded shadow"
+						style="background-image: url(images/side-project-1.png); min-height: 400px;">
 						<div class="overlay"></div>
 						<div class="text text-center p-4">
-							<h3><a target="_blank" href="https://qpi.kr/"> QPI - 소개팅 서비스 소개 페이지 개발</a></h3>
-							<!-- <span>UI/UX 디자인부터 웹 호스팅까지 전체 영역을 담당하였습니다.</span> -->
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-2.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-3.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-4.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-5.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
-						style="background-image: url(images/work-6.jpg);">
-						<div class="overlay"></div>
-						<div class="text text-center p-4">
-							<h3><a href="#">Branding &amp; Illustration Design</a></h3>
-							<span>Web Design</span>
+							<span class="subheading text-white-50">Web Service</span>
+							<h3 class="mt-2"><a target="_blank" href="https://qpi.kr/">QPI - 소개팅 서비스 소개 페이지 개발</a></h3>
+							<p class="text-white mt-2">UI/UX 화면 기획부터 퍼블리싱, 웹 호스팅 및 도메인 연결까지 전체 영역을 담당하였습니다.</p>
+							<div class="mt-3">
+								<a target="_blank" href="https://qpi.kr/" class="btn btn-primary py-2 px-4">사이트 바로가기</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -679,85 +473,14 @@
 		</div>
 	</section>
 
-	<!-- <section class="ftco-section" id="blog-section">
-		<div class="container">
-			<div class="row justify-content-center mb-5 pb-5">
-				<div class="col-md-7 heading-section text-center ftco-animate">
-					<h1 class="big big-2">Blog</h1>
-					<h2 class="mb-4">My Blog</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row d-flex">
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_1.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry justify-content-end">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex ftco-animate">
-					<div class="blog-entry">
-						<a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
-						</a>
-						<div class="text mt-3 float-right d-block">
-							<h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a>
-							</h3>
-							<div class="d-flex align-items-center mb-3 meta">
-								<p class="mb-0">
-									<span class="mr-2">Sept. 12, 2019</span>
-									<a href="#" class="mr-2">Admin</a>
-									<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
-								</p>
-							</div>
-							<p>A small river named Duden flows by their place and supplies it with the necessary
-								regelialia.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-
 	<section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>함께할 <span>회사를 찾는 중</span> 입니다.</h2>
-					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-					<p class="mb-0"><a href="#" class="btn btn-primary py-3 px-5">연락주세요.</a></p>
+				<div class="col-md-8 ftco-animate text-center">
+					<h2>지속적인 학습과 성장을 <span>추구하는 개발자</span> 이효택입니다.</h2>
+					<p>안정적인 대규모 시스템 운영부터 신규 비즈니스 기능 개발까지, 항상 사용자와 팀의 관점에서 고민합니다.</p>
+					<p class="mb-0"><a href="#contact-section" class="btn btn-primary py-3 px-5">연락하기</a></p>
 				</div>
 			</div>
 		</div>
@@ -792,7 +515,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Contact Number</h3>
-							<p>010 4440 8203</p>
+							<p><a href="tel:010-4440-8203">010-4440-8203</a></p>
 						</div>
 					</div>
 				</div>
@@ -803,7 +526,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Email Address</h3>
-							<p>ktn613@naver.com</p>
+							<p><a href="mailto:ktn613@naver.com">ktn613@naver.com</a></p>
 						</div>
 					</div>
 				</div>
@@ -814,8 +537,7 @@
 						</div>
 						<div>
 							<h3 class="mb-4">Website</h3>
-							<!-- <p><a href="#">yoursite.com</a></p> -->
-							<p><a href="#">https://hyotaeklee.github.io/com-porfolio</a></p>
+							<p><a target="_blank" href="https://hyotaeklee.github.io/com-porfolio">https://hyotaeklee.github.io/com-porfolio</a></p>
 						</div>
 					</div>
 				</div>

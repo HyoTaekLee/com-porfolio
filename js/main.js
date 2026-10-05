@@ -12,9 +12,92 @@ const getDateDiff = (d1, d2) => {
 	return Math.abs(diffDate / (1000 * 60 * 60 * 24)); // 밀리세컨 * 초 * 분 * 시 = 일
 }
 
+const getCareerData = (startDateStr) => {
+	const start = new Date(startDateStr);
+	const now = new Date();
+
+	const diffTime = Math.abs(now.getTime() - start.getTime());
+	const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+
+	let months = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+	if (now.getDate() < start.getDate()) {
+		months--;
+	}
+	if (months < 0) months = 0;
+
+	const fullYears = Math.floor(months / 12);
+	const remainMonths = months % 12;
+	const careerYear = fullYears + 1;
+
+	let periodText = fullYears + '년';
+	if (remainMonths > 0) {
+		periodText += ' ' + remainMonths + '개월';
+	}
+
+	return {
+		days: diffDays,
+		years: careerYear,
+		yearText: careerYear + '년차',
+		periodText: periodText
+	};
+};
+
+const getPeriodText = (startDateStr, endDateStr) => {
+	const start = new Date(startDateStr);
+	const end = endDateStr ? new Date(endDateStr) : new Date();
+
+	let months = (end.getFullYear() - start.getFullYear()) * 12 + (end.getMonth() - start.getMonth());
+	if (end.getDate() < start.getDate()) {
+		months--;
+	}
+	if (months < 0) months = 0;
+
+	const fullYears = Math.floor(months / 12);
+	const remainMonths = months % 12;
+
+	let text = '';
+	if (fullYears > 0) {
+		text += fullYears + '년';
+		if (remainMonths > 0) {
+			text += ' ' + remainMonths + '개월';
+		}
+	} else {
+		text = (remainMonths > 0 ? remainMonths : 1) + '개월';
+	}
+	return text;
+};
+
 (function($) {
 
 	"use strict";
+
+	// 2017년 12월 기준 가변 경력 데이터 계산 및 동적 반영
+	var careerData = getCareerData("2017-12-01");
+
+	$('.career-year').text(careerData.yearText);
+	$('.career-period').text(careerData.periodText);
+	$('.naon-period').text(getPeriodText("2024-10-01"));
+
+	// txt-rotate 속성의 연차 텍스트를 가변값으로 치환
+	$('.txt-rotate').each(function() {
+		var rotateStr = $(this).attr('data-rotate');
+		if (rotateStr) {
+			try {
+				var rotateArr = JSON.parse(rotateStr);
+				rotateArr = rotateArr.map(function(item) {
+					return item.replace(/\d+년차/g, careerData.yearText);
+				});
+				$(this).attr('data-rotate', JSON.stringify(rotateArr));
+			} catch(e) {
+				rotateStr = rotateStr.replace(/\d+년차/g, careerData.yearText);
+				$(this).attr('data-rotate', rotateStr);
+			}
+		}
+	});
+
+	// 코딩한 일수 data-number 및 초기 텍스트 설정
+	$('#wordDate').attr('data-number', careerData.days).text(careerData.days);
+	$('#careerYearCounter').attr('data-number', careerData.years).text(careerData.years);
 
 	$(window).stellar({
     responsive: true,
@@ -135,11 +218,6 @@ const getDateDiff = (d1, d2) => {
 			// $this.find('.dropdown-menu').removeClass('animated-fast fadeInUp show');
 			$this.find('.dropdown-menu').removeClass('show');
 		// }, 100);
-	});
-
-
-	$('#dropdown04').on('show.bs.dropdown', function () {
-	  console.log('show');
 	});
 
 	// scroll
@@ -352,20 +430,6 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
-
-  var today = new Date();
-
-	var year = today.getFullYear();
-	var month = ('0' + (today.getMonth() + 1)).slice(-2);
-	var day = ('0' + today.getDate()).slice(-2);
-
-	var dateString = year + '-' + month  + '-' + day;
-
-  var wordDate = getDateDiff("2017-12-01", dateString);
-  console.log("wordDate",wordDate);
-  $('#wordDate').val(wordDate);
-  $('#wordDate').text(wordDate);
-  
 };
 
 
